@@ -31,7 +31,7 @@ php artisan serve
 ```
 
 Login page can be access to:
-> http:localhost:8000/p/kenhyuwa/dashboard
+http:localhost:8000/p/kenhyuwa/dashboard
 
 you can change this path. open file on config/voyager.php and change following line:
 
@@ -40,16 +40,16 @@ you can change this path. open file on config/voyager.php and change following l
 ```
 
 by default user is:
-> email: admin@admin.com
-> password: password
+- email: admin@admin.com
+- password: password
 
 ## Donate
 Give me a star
 
 ##  Special thanks for 
-> https://packagist.org
-> https://laravelvoyager.com
-> https://highlightjs.org
+- https://packagist.org
+- https://laravelvoyager.com
+- https://highlightjs.org
 
 ## License
 MIT
