@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
+.voyager .panel.panel-warning .panel-heading {
+	background-color: rgb(244, 100, 95) !important;
+}
+.voyager .panel.panel-primary .panel-heading {
+	background-color: #009689 !important;
+}
+body, html{
+	font-family: 'Titillium Web', sans-serif;
+}
+input[type=checkbox]{
+	margin: 0 0 0 10px;
+}
