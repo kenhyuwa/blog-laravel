@@ -12,6 +12,22 @@ Open Terminal, then type command:
 Go to project folder :
 ```bash
 cd blog-laravel
+cp .env.example .env
+```
+
+setup config on .env file
+```php 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog // yourdatabase, create if not exist
+DB_USERNAME=root // user for database by default is root
+DB_PASSWORD= // password for database by default is : empty
+```
+
+then 
+```bash
+php artisan key:generate
 ```
 
 Type following command : 
@@ -43,6 +59,9 @@ by default user is:
 - email: admin@admin.com
 - password: password
 
+If you get an error, open posts tables and on field category_id update row reference by categories tables.
+Important, you need connect to internet for getting data from packagist API
+
 ## Donate
 Give me a star
 
@@ -50,6 +69,7 @@ Give me a star
 - https://packagist.org
 - https://laravelvoyager.com
 - https://highlightjs.org
+- all 
 
 ## License
 MIT

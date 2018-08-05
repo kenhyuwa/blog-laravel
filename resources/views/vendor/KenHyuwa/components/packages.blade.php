@@ -5,29 +5,33 @@
         </header>
         <div class="gutter-2">
             @isset ($packages)
-                @foreach ($packages as $key => $v)
-                    <a href="{{ url(str_replace('https://packagist.org', '', $v['url'])) }}" class="gutter-item">
-                        <div class="__top">
-                            <img src="{{ asset('/img/laravel-packages.png') }}" class="img-fluid">
-                        </div>
-                        <div class="__bottom">
-                            <h1>{{ $v['name'] }}</h1>
-                            <p>{{ ($v['description'] == '') ? '...' : $v['description'] }}</p>
-                        </div>
-                    </a>
-                @endforeach
+                @if(sizeof($packages) > 0)
+                    @foreach ($packages as $key => $v)
+                        <a href="{{ url(str_replace('https://packagist.org', '', $v['url'])) }}" class="gutter-item">
+                            <div class="__top">
+                                <img src="{{ asset('/img/laravel-packages.png') }}" class="img-fluid">
+                            </div>
+                            <div class="__bottom">
+                                <h1>{{ $v['name'] }}</h1>
+                                <p>{{ ($v['description'] == '') ? '...' : $v['description'] }}</p>
+                            </div>
+                        </a>
+                    @endforeach
+                @endif
             @else
-                @foreach ($packages_share['packages'] as $key => $v)
-                    <a href="{{ url(str_replace('https://packagist.org', '', $v['url'])) }}" class="gutter-item">
-                        <div class="__top">
-                            <img src="{{ asset('/img/laravel-packages.png') }}" class="img-fluid">
-                        </div>
-                        <div class="__bottom">
-                            <h1>{{ $v['name'] }}</h1>
-                            <p>{{ ($v['description'] == '') ? '...' : $v['description'] }}</p>
-                        </div>
-                    </a>
-                @endforeach
+                @if(sizeof($packages_share['packages']) > 0)
+                    @foreach ($packages_share['packages'] as $key => $v)
+                        <a href="{{ url(str_replace('https://packagist.org', '', $v['url'])) }}" class="gutter-item">
+                            <div class="__top">
+                                <img src="{{ asset('/img/laravel-packages.png') }}" class="img-fluid">
+                            </div>
+                            <div class="__bottom">
+                                <h1>{{ $v['name'] }}</h1>
+                                <p>{{ ($v['description'] == '') ? '...' : $v['description'] }}</p>
+                            </div>
+                        </a>
+                    @endforeach
+                @endif
             @endisset
         </div>
     </div>
