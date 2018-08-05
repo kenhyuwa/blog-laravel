@@ -1,4 +1,4 @@
-# react-native-login-screen
+# Laravel Blog
 ![demo](https://raw.githubusercontent.com/kenhyuwa/blog-laravel/master/demo-dekstop.gif)  
 
 ## Available
@@ -10,19 +10,29 @@ Open Terminal, then type command:
 > git clone https://github.com/kenhyuwa/blog-laravel.git
 
 Go to project folder :
-> cd blog-laravel
+```bash
+cd blog-laravel
+```
 
 Type following command : 
-> php artisan migrate
-> php artisan voyager::install
+```bash
+php artisan migrate
+php artisan voyager::install
+```
 
 If you need data dummy, you have type following command:
-> php artisan voyager::install --with-dummy
+```bash
+php artisan voyager::install --with-dummy
+```
 
 then 
-> php artisan serve
+```bash
+php artisan serve
+```
 
-Login page can be access to url [http:localhost:8000/p/kenhyuwa/dashboard](Login)
+Login page can be access to:
+> http:localhost:8000/p/kenhyuwa/dashboard
+
 you can change this path. open file on config/voyager.php and change following line:
 
 ```php
@@ -30,16 +40,16 @@ you can change this path. open file on config/voyager.php and change following l
 ```
 
 by default user is:
-email: admin@admin.com 
-password: password
+> email: admin@admin.com
+> password: password
 
 ## Donate
 Give me a star
 
 ##  Special thanks for 
-- [x] [https://packagist.org](Packagist)
-- [x] [https://laravelvoyager.com](Laravel voyager)
-- [x] [https://highlightjs.org](highlight.js)
+> https://packagist.org
+> https://laravelvoyager.com
+> https://highlightjs.org
 
 ## License
 MIT
